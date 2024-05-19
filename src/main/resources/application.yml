@@ -1,0 +1,22 @@
+spring:
+    application:
+        name: library
+
+    datasource:
+        url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/library_db
+        username: root
+        password: root
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+    mvc:
+        pathmatch:
+            matching-strategy: ant-path-matcher
+server:
+    port: 8081
+
+
+
+
